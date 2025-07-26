@@ -1,14 +1,14 @@
 from . import __version__ as app_version
 
 app_name = "raven"
-app_title = "Raven"
+app_title = "Chat"
 app_publisher = "The Commit Company (Algocode Technologies Pvt. Ltd.)"
 app_description = "Messaging Application"
 app_email = "support@thecommit.company"
 app_license = "AGPLv3"
 source_link = "https://github.com/The-Commit-Company/Raven"
-app_logo = "/assets/raven/raven-logo.png"
-app_logo_url = "/assets/raven/raven-logo.png"
+app_logo = "https://ik.imagekit.io/ncocp99of/asset/chat.svg?updatedAt=1753517608463"
+app_logo_url = "https://ik.imagekit.io/ncocp99of/asset/chat.svg?updatedAt=1753517608463"
 
 # Includes in <head>
 # ------------------
@@ -22,8 +22,8 @@ app_include_js = "raven.bundle.js"
 add_to_apps_screen = [
 	{
 		"name": "raven",
-		"logo": "/assets/raven/raven-logo.png",
-		"title": "Raven",
+		"logo": "https://ik.imagekit.io/ncocp99of/asset/chat.svg?updatedAt=1753517608463",
+		"title": "Chat",
 		"route": "/raven",
 		"has_permission": "raven.permissions.check_app_permission",
 	}

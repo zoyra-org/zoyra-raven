@@ -2,6 +2,12 @@
     transition: height 0.3s ease-in-out;
 }
 
+.raven-chat {
+    .raven-container {
+        display: none;
+    }
+}
+
 .raven-container[data-open-state="false"] {
     height: var(--raven-header-height);
     overflow: hidden;

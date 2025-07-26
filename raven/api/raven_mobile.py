@@ -26,7 +26,7 @@ def get_client_id():
 		"raven_version": raven_version,
 		"frappe_version": frappe_version,
 		"logo": frappe.db.get_single_value("Navbar Settings", "app_logo")
-		or "/assets/raven/raven-logo.png",
+		or "https://ik.imagekit.io/ncocp99of/asset/chat.svg?updatedAt=1753517608463",
 	}
 
 
