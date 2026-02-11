@@ -18,12 +18,12 @@ def get_number_of_replies(thread_id: str):
 @frappe.whitelist(methods=["GET"])
 def get_all_threads(
 	workspace: str = None,
-	content=None,
-	channel_id=None,
-	is_ai_thread=0,
-	start_after=0,
-	limit=10,
-	only_show_unread=False,
+	content: str = None,
+	channel_id: str = None,
+	is_ai_thread: int = 0,
+	start_after: int = 0,
+	limit: int = 10,
+	only_show_unread: bool = False,
 ):
 	"""
 	Get all the threads in which the user is a participant
@@ -111,7 +111,12 @@ def get_all_threads(
 
 @frappe.whitelist(methods=["GET"])
 def get_other_threads(
-	workspace: str = None, content=None, channel_id=None, is_ai_thread=0, start_after=0, limit=10
+	workspace: str = None,
+	content: str = None,
+	channel_id: str = None,
+	is_ai_thread: int = 0,
+	start_after: int = 0,
+	limit: int = 10,
 ):
 	"""
 	Get all the threads in which the user is not a participant, but is a member of the channel
@@ -235,7 +240,7 @@ def get_unread_threads(workspace: str = None, thread_id: str = None):
 
 
 @frappe.whitelist(methods=["POST"])
-def create_thread(message_id):
+def create_thread(message_id: str):
 	"""
 	A thread can be created by any user with read access to the channel in which the message has been sent.
 	The thread will be created with this user as the first participant.
